@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu tarjeta de felicitación</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Crea tu tarjeta de felicitación</h1>
+    </header>
+
+    <!-- Contenedor principal: divide la vista en la sección de vista previa y el menú de personalización -->
+    <section class="contenedor">
+
+        <!-- Vista previa -->
+        <div id="vistaPrevia" class="seccion-vistaPrevia">
+            <div id="tarjeta" class="tarjeta">
+
+                <h2 id="tituloTarjeta">[Título]</h2>
+                <!-- Contenedor del marco -->
+                <div class="contenedor-marco" id="contenedorMarco">
+                    <img id="imagenTarjeta" src="" alt="Dibujo" class="imagen-centrada">
+                </div>
+
+                <h3 id="nombreDestinatario">[Nombre del destinatario]</h3>
+
+                <p id="mensajeTarjeta">[Mensaje]</p>
+            </div>
+        </div>
+
+        <!-- Menú de personalización -->
+        <div id="menuPersonalizacion" class="seccion-personalizacion">
+
+            <h2>Elige un tema</h2>
+            <select id="seleccionarTema">
+                <option value="navidad">Navidad</option>
+                <option value="añonuevo">Año Nuevo</option>
+                <option value="sanvalentin">San Valentín</option>
+            </select>
+
+            <h2>Color de fondo</h2>
+            <input type="color" id="selectorColorFondo">
+
+            <h2>Dibujo</h2>
+            <div id="opcionesDibujo" class="contenedor-opciones">
+                <!-- imágenes de dibujos -->
+            </div>
+
+            <h2>Datos del destinatario</h2>
+            <div class="contenedor-formulario">
+                <div class="columna">
+
+                    <input type="text" id="inputNombreDestinatario" placeholder="Captura el nombre del destinatario">
+
+                    <input type="text" id="inputTituloTarjeta" placeholder="Captura un título">
+                </div>
+
+                <div class="columna">
+
+                    <textarea id="inputMensaje" placeholder="Dedica un mensaje"></textarea>
+                </div>
+            </div>
+
+
+            <button id="botonListo">LISTO</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Tarjeta personalizada - Julia Paramo</p>
+    </footer>
+
+    <script src="./js/dom.js"></script>
+</body>
+</html>
